@@ -1,0 +1,1 @@
+![MAS Security](images/dlt-mas-security-desire6g-architecture.png)
