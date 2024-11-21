@@ -34,6 +34,7 @@ logger.debug(f"Received contract address: {args.contract_address}")
 eth_node_url = args.eth_node_url
 try:
     web3 = Web3(WebsocketProvider(eth_node_url))
+    # web3 = Web3(HTTPProvider(eth_node_url))
     web3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
     # Check if connected to the Ethereum node
